@@ -1,103 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8">
-		<title>example of BootStrap3.3.4</title>
+		<title>example of AngularJS</title>
 		<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
+		<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+		<script src="angularJs/clock.js"></script>
 	</head>
-	<body>
-		<nav class="navbar navbar-default">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand">Bootstrip</a>
-			</div>
-			<div class="collapse navbar-collapse" id="my-navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">.NET</a></li>
-					<li><a href="#">Web</a></li>
-					<li class="dropdown">
-						<a href="#" data-toggle="dropdown">
-							Java
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">JDK</a></li>
-							<li><a href="#">Spring MVC</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Maven</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<ol class="breadcrumb">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">2016</a></li>
-			<li class="active">March</li>
-		</ol>
-
-		<div class="panel-group" id="accordion">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title">
-						<div data-toggle="collapse" data-parent="#accordion" data-target="#collapseDefault">Default Collapse</div>
-					</div>
-				</div>
-				<div id="collapseDefault" class="collapse panel-collapse in">
-					<div class="panel-body">
-						This is default collapse's contents.This is default collapse's contents.
-						This is default collapse's contents.This is default collapse's contents.						
-					</div>
-				</div>
-			</div>
-
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<div class="panel-title">
-						<div data-toggle="collapse" data-parent="#accordion" data-target="#collapseInfo">Info Collapse</div>
-					</div>
-				</div>
-				<div id="collapseInfo" class="collapse panel-collapse">
-					<div class="panel-body">
-						This is inof collapse,This is inof collapse,This is inof collapse
-						This is inof collapse
-					</div>
-				</div>
-			</div>
-			
+	<body ng-app="angularstudy" ng-init="person = {name:'somebody',gender:'male',age:28}">
+		<div class="alert alert-success">
+			<angularstudy-Clock/>			
 		</div>
-
-		<div id="mycarousel" class="carousel slide">
-			<ol class="carousel-indicators">
-				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#mycarousel" data-slide-to="1"></li>
-				<li data-target="#mycarousel" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="item active">
-					<img src="imgs/1.png" alt="First slide">
-					<div class="carousel-caption">first</div>
-				</div>
-				<div class="item">
-					<img src="imgs/2.png" alt="Second slide">
-					<div class="carousel-caption">second</div>
-				</div>
-				<div class="item">
-					<img src="imgs/3.png" alt="Third slide">
-					<div class="carousel-caption">third</div>
-				</div>
-			</div>
-			<a href="#mycarousel" class="carousel-control left" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span></a>
-				<a href="#mycarousel" class="carousel-control right" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span></a>
-				</div>
-			</body>
-		</html>
+		<div class="alert alert-info">
+			<angularstudy-Name-Card data="person"></angularstudy-Name-Card>
+		</div>
+	</body
+</html>

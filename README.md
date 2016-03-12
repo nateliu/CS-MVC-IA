@@ -5,27 +5,11 @@ git checkout action_xxx
 to get each example.
 and each branch has it ownself Readme.md to illustrate  what including in current branch.
 <br/>
-git checkout action_004
+git checkout action_005
 
-this branch is about the bootstrap 3.3.4 use 12 plugins
+this branch is use Angular to do directive.
 
-navbar
--default nav
-  -header div
-  -collapse div
-    -nav ul
-    
-carousel
--indicators ol
--inner div
--control a
-
-collapse
-panel-group
-  panel
-    panel-heading
-     panel-title
-       data-toggle,data-parent,data-target
-    collapse panel-collapse
-      panel-body
-      
+directive if name has UPPER character, then in the HTML,it should be add - before UPPER character.
+for example in the js we defined the directive name is 
+angularstudyClock
+then in html, it should be angularstudy-Clock or angularstudy-clock

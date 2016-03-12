@@ -4,19 +4,45 @@
 		<title>example of _.bindAll function example in underscore</title>
 		<script src="http://apps.bdimg.com/libs/jquery/1.7.0/jquery.min.js"></script>
 		<script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js"></script>
+		<script src="http://apps.bdimg.com/libs/backbone.js/1.1.2/backbone-min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				window.Test = Backbone.Model.extend({
+					defaults: {
+						content: ''
+					}
+				});
+
+				window.TestList = Backbone.Collection.extend({
+					model: Test
+				});
+				
+				var data = new TestList({
+					content:'hello, backbone'
+				});
+
+				window.TestView = Backbone.View.extend({					
+					initialize:function(){
+						$("#divTip").html(data.models[0].get("content"));
+					}
+				});
+				window.App = new TestView;
+						});
+		</script>
 	</head>
 	<body>
-		<div id="divTip">Click me</div>
+		<div id="divTip"></div>
+
 		<script type="text/javascript">
-			var divView ={
+			var divView = {
 				element:'#divTip',
-				afterclicktext:'hello, underscore! my first backbone practice.',
-				onClick:function(){
-					{$(this.element).html(this.afterclicktext);}
+				afterclicktext:'you have click me.',
+				onclick:function(){
+					$(this.element).html(this.afterclicktext);
 				}
 			};
-			_.bindAll(divView,'onClick');
-			$(divView.element).bind('click',divView.onClick);
+			_.bindAll(divView,'onclick');
+			$(divView.element).bind('click',divView.onclick)
 		</script>
 	</body>
 </html>

@@ -1,152 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>example of _.bindAll function example in underscore</title>
+		<meta charset="UTF-8">
+		<title>example of BootStrap3.3.4</title>
 		<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js"></script>
-		<script src="http://apps.bdimg.com/libs/backbone.js/1.1.2/backbone-min.js"></script>
 		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
-		<script type="text/javascript">
-			$(function() {
-				_.each([1,2,3,4,5,6,7,8,9,10],function(n){ if(!(n%2)) console.log(n); });
-			});
-		</script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<h3 class="panel-title">Underscore Functions</h3>
-						</div>
-						<div id="collection" class="panel-body">
-							<div class="panel panel-info">
-								<div class="panel-heading">
-									<h3 class="panel-title">Collection</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-group">
-										<li class="list-group-item">_.each
-											<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#each">Click here to see the result of following script-snippet.</button>
-											<pre>
-												<code>
-_.each([1,2,3,4,5,6,7,8,9,10],function(n){
-if(!(n%2))
-console.log(n);
-});
-												</code>
-											</pre>											
-											<table id="each" class="collapse table row">
-												<caption>result:</caption>
-												<tbody>
-													<tr>
-														<td></td>
-														<td>2</td>
-														<td></td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>4</td>
-														<td></td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>6</td>
-														<td></td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>8</td>
-														<td></td>
-													</tr>
-													<tr>
-														<td></td>
-														<td>10</td>
-														<td></td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="list-group-item">_.map</li>
-										<li class="list-group-item">_.find</li>
-										<li class="list-group-item">_.filter</li>
-										<li class="list-group-item">_.max</li>
-										<li class="list-group-item">_.min</li>
-										<li class="list-group-item">_.sortBy</li>
-										<li class="list-group-item">_.groupBy</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel-body">
-							<div class="panel panel-info">
-								<div class="panel-heading">
-									<h3 class="panel-title">Array</h3>
-								</div>
-								<div id="array" class="panel-body">
-									<ul class="list-group">
-										<li class="list-group-item">_.first</li>
-										<li class="list-group-item">_.last</li>
-										<li class="list-group-item">_.indexOf</li>
-										<li class="list-group-item">_.without</li>
-										<li class="list-group-item">_.union</li>
-									</ul>
-								</div>								
-							</div>
-						</div>
-						<div class="panel-body">
-							<div class="panel panel-info">
-								<div class="panel-heading">
-									<h3 class="panel-title">Function</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-group">
-										<li class="list-group-item">_.delay</li>
-										<li class="list-group-item">_.once</li>
-										<li class="list-group-item">_.wrap</li>
-										<li class="list-group-item">_.compose</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel-body">
-							<div class="panel panel-info">
-								<div class="panel-heading">
-									<h3 class="panel-title">Object</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-group">
-										<li class="list-group-item">_.keys</li>
-										<li class="list-group-item">_.values</li>
-										<li class="list-group-item">_.pick</li>
-										<li class="list-group-item">_.omit</li>
-										<li class="list-group-item">_.defaults</li>
-										<li class="list-group-item">_.has</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="panel-body">
-							<div class="panel panel-info">
-								<div class="panel-heading">
-									<h3 class="panel-title">Features</h3>
-								</div>
-								<div class="panel-body">
-									<ul class="list-group">
-										<li class="list-group-item">_.random</li>
-										<li class="list-group-item">_.escape</li>
-										<li class="list-group-item">_.unescape</li>
-										<li class="list-group-item">_.template</li>
-										<li class="list-group-item">_.chain</li>
-									</ul>
-								</div>
-							</div>
-						</div>
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Bootstrip</a>
+			</div>
+			<div class="collapse navbar-collapse" id="my-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">.NET</a></li>
+					<li><a href="#">Web</a></li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown">
+							Java
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">JDK</a></li>
+							<li><a href="#">Spring MVC</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Maven</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<ol class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">2016</a></li>
+			<li class="active">March</li>
+		</ol>
+
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div data-toggle="collapse" data-parent="#accordion" data-target="#collapseDefault">Default Collapse</div>
+					</div>
+				</div>
+				<div id="collapseDefault" class="collapse panel-collapse in">
+					<div class="panel-body">
+						This is default collapse's contents.This is default collapse's contents.
+						This is default collapse's contents.This is default collapse's contents.						
 					</div>
 				</div>
 			</div>
+
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<div class="panel-title">
+						<div data-toggle="collapse" data-parent="#accordion" data-target="#collapseInfo">Info Collapse</div>
+					</div>
+				</div>
+				<div id="collapseInfo" class="collapse panel-collapse">
+					<div class="panel-body">
+						This is inof collapse,This is inof collapse,This is inof collapse
+						This is inof collapse
+					</div>
+				</div>
+			</div>
+			
 		</div>
-	</body>
-</html>
+
+		<div id="mycarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#mycarousel" data-slide-to="1"></li>
+				<li data-target="#mycarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="imgs/1.png" alt="First slide">
+					<div class="carousel-caption">first</div>
+				</div>
+				<div class="item">
+					<img src="imgs/2.png" alt="Second slide">
+					<div class="carousel-caption">second</div>
+				</div>
+				<div class="item">
+					<img src="imgs/3.png" alt="Third slide">
+					<div class="carousel-caption">third</div>
+				</div>
+			</div>
+			<a href="#mycarousel" class="carousel-control left" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a href="#mycarousel" class="carousel-control right" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			</body>
+		</html>
